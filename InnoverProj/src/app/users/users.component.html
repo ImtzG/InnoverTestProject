@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="header">
+        Student List
+    </div>
+    <kendo-grid [kendoGridBinding]="studentList" kendoGridSelectBy="name" [pageSize]="6"
+        [pageable]="true" [sortable]="true" [groupable]="false" [reorderable]="true" [resizable]="true" [height]="430"
+        [columnMenu]="{ filter: true }">
+        <kendo-grid-column field="name" title="Name" [width]="220">
+        </kendo-grid-column>
+        <kendo-grid-column field="age" title="Age" [width]="100" [resizable]="false">
+        </kendo-grid-column>
+        <kendo-grid-column field="hobbies" title="Hobbies" [width]="100" [resizable]="false">
+        </kendo-grid-column>       
+    </kendo-grid>
+</div>
